@@ -1,0 +1,504 @@
+html, body {
+  font-family: "Afacad Flux", sans-serif;
+  background-color: black;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+h1{
+  color: white;
+  background-color: black;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 40px;
+  font-weight: 400;
+  display: flex;
+}
+  
+.container{
+  display: flex;
+  align-items: center;
+}
+
+.container img{
+  height: 80px;
+  padding: 20px;
+}
+
+.topo{
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu{
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  background-image: url("menu.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.menuimg{
+  padding: 1em;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+
+.listamenu{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  z-index: 1000;
+  border-radius: 0 0 20px 20px;
+  text-transform: uppercase;
+}
+
+.abrirmenu:checked ~.listamenu{
+  display: block;
+}
+
+.menulink{
+  text-decoration: none;
+  color: white;
+}
+
+.listamenu .menuitem:hover{
+  background-color: grey;
+}
+
+.menulink:hover{
+  color: black;
+  font-weight: 1000;
+}
+
+.menuitem{
+  color: white;
+}
+.inicio{
+  background-color: black;
+  color:white;
+  font-size: 40px;
+  text-align: center;
+  padding: 2.5em 2em;
+  margin-bottom: 1em;
+  font-weight: 100;
+}
+
+.iniciotitulo{
+  font-weight: 700;
+  font-size: 50px;
+  margin: 2em;
+}
+
+.iniciotexto{
+  font-weight: 500;
+  margin: 2em;
+}
+
+.pesquisa{
+  background-color: transparent;
+  border: 1px solid;
+  color: gray;
+  border-radius: 24px;
+  padding: 2em;
+  width: 70%;
+  font-family: "Afacad Flux", sans-serif;
+  font-weight: 700;
+  margin: 2em;
+}
+
+.pesquisa::placeholder{
+  font-size: 30px;
+  color: silver;
+  font-weight: 400;
+  text-align: center;
+}
+
+.titulo{
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 80px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  padding: 0.5em 0;
+}
+
+.swiper-slide img{
+  width: 100%;
+  box-shadow: white;
+}
+
+.swiper-pagination-bullet, .swiper-pagination-bllet-active{
+  background-color: white;
+}
+
+.swiper-button-prev, .swiper-button-next{
+  color: white;
+}
+
+.indicacoes{
+  background: rgb(39,36,36);
+  flex-direction: row;
+  box-decoration-break: white;
+  border-radius: 10px;
+  margin: 1em;
+  padding: 1em 1em 1em 3em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding-bottom: 80px;
+}
+
+.descricao{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+
+.descricaotitulo{
+  color: white;
+  font-weight: 700;
+  display: flex;
+  font-size: 60px;
+}
+
+.descricaolivro{
+  color: silver;
+  font-size: 40px;
+  margin: 0.5em 0;
+  display: flex;
+  padding-right: 50px;
+}
+
+.descricaotexto{
+  font-size: 30px;
+  color: white;
+  display: flex;
+  padding-right: 100px;
+  text-align: justify;
+  width: 100%;
+}
+
+.descricaoimg{
+  height: 300px;
+  width: auto;
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.botoes{
+  display: flex;
+}
+
+.botoes img{
+  width: 40px;
+  height: auto;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.saibamais{
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.botao{
+  background-color: black;
+  padding: 1em 2.2em;
+  display: block;
+  margin: 0 auto;
+  color: white;
+  text-decoration: none;
+  border-radius: 200px;
+  max-width: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+.botao:hover{
+  background-color: gray;
+}
+
+.autor{
+  width: 300px;
+  margin-top: 90px;
+  margin-left: 5px;
+  margin-bottom: 90px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 30px;
+}
+
+.menor{
+  width: 200px;
+  height: auto;
+}
+
+.topicos{
+  background: grey;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.topicostitulo{
+  color: black;
+  font-weight: 300;
+  margin-bottom: 1em;
+}
+
+.topicoslista{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.topicositem{
+  margin: 2em 0.5em;
+}
+
+.topicoslink{
+  color: white;
+  padding: 1em;
+  background-color: rgb(70,66,66);
+  border-radius: 200px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.topicoslink:hover{
+  background-color: rgb(46,45,45);
+}
+
+.contato{
+  background-color: rgb(46,45,45);
+  padding: 3em 2em 3em 2em;
+  height:40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contatotitulo{
+  font-size: 50px;
+  color: white;
+}
+
+.contatotexto{
+  margin: 1em 0;
+  color: white;
+}
+
+.contatoemail{
+  background-color: transparent;
+  bopx solid white;
+  color: rgb(0,0,0);
+  border-radius: 100px;
+  padding: 2em;
+  width: 50%;
+  font-family: "Afacad Flux", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 25px;
+}
+
+.contatoemail::placeholder{
+  color: white;
+  opacity: 0.7;
+  background: url("email.png") no-repeat 5%;
+  background-size: 35px;
+  width: 60%;
+}
+
+.contato input{
+  padding: 0.5rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 30px;
+}
+
+.rodape{
+  background-color: black;
+  padding: 1em;
+}
+
+.rodapetitulo{
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 80px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 0.5em 0;
+  margin-bottom: 20px;
+}
+
+.listarodape{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 10px;
+}
+
+.rodapeitem{
+  display: flex;
+  align-items: center;
+}
+
+.rodapeitem img{
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+}
+
+.rodapelink{
+  color: white;
+  text-decoration: none;
+  margin-left: 0.6em;
+  font-size: 25px;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px){
+  .opcoes{
+    display: flex;
+    padding-left: 2em;
+    gap: 2em;
+  }
+  .opcoesitem, .opcoeslink{
+    border-radius: 100px;
+  }
+  .opcoesitem{
+    padding: 0.5em;
+  }
+  .opcoeslink, .opcoesitem{
+    background-color: rgb(53,52,52);
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+  }
+  .opcoesitem:hover, .opcoeslink:hover{
+    background-color: gray;
+    font-weight: 1000;
+    color: white;
+    border-radius: 100px;
+  }
+  .menuimg{
+    display: none;
+  }
+  .pc{
+    display: none;
+  }
+  .listamenu{
+    left:35%;
+  }
+}
+
+@media (max-width: 799px){
+  .container img, .menuimg{
+    width: 30px;
+    height: 30px;
+    padding: 0.5em;
+  }
+    .menu{
+    width: 10px;
+    height: 10px;
+  }
+    .opcoes{
+    display: none;
+  }
+  h1{
+    font-size: 30px;
+    text-align: center;
+  }
+  .listamenu{
+    font-size: 15px;
+  }
+  .descricao, .descricaotexto, .descricaotitulo, .topicoslink, .iniciotexto{
+    font-size: 20px;
+  }
+   .iniciotitulo{
+    font-size: 35px;
+  }
+  .indicacoes{
+    padding: 1em;
+  }
+  .botao{
+    padding: 1em 1em;
+    max-width: 70px;
+  }
+  .contatotitulo, .contatotexto{
+    font-size: 30px;
+    max-width: 90%;
+  }
+  .contatoemail::placeholder{
+    background: auto;
+    background-image: none;
+  }
+  .saibamais{
+    width: auto;
+    padding: 0;
+  }
+  .saibamais img, .autor{
+    width: 130px;
+    height: auto;
+    max-width: 90%;
+    margin-top: 5em;
+  }
+  .botao{
+    width: 50%;
+  }
+  .swiper-slide img{
+    width: 80px;
+    height: auto;
+    gap: 20px;
+  }
+  .topicos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .topicostitulo{
+    font-size:25px;
+  }
+  .topicositem{
+    height: 40px;
+    font-size: 14px;
+  }
+  .topicoslink:hover{
+    font-size: 22px;
+  }
+  
+  .listarodape, .rodapelink{
+    display: none;
+  }
+  .rodapetitulo{
+    font-size: 15px;
+    width: 80%;
+  }
+  .pesquisa::placeholder, .contatoemail::placeholder{
+    font-size: 13px;
+  }
+  .titulos{
+    font-size: 25px;
+    width: 80%;
+  }
+}
